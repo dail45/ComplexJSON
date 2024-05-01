@@ -8,9 +8,11 @@ def readme():
 
 setup(
     name='ComplexJSON',
-    version='1.0',
+    version='1.0.1',
     author='dail45',
     description='This is the simplest module for serialize and deserialize python complex objects',
+    long_description=readme(),
+    long_description_content_type='text/markdown',
     packages=find_packages(),
     url="https://github.com/dail45/ComplexJSON",
     classifiers=[

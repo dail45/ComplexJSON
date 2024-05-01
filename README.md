@@ -3,6 +3,15 @@
 ## What is this? ##
 The module allows you serialize your python complex objects to json and deserialize it.
 
+## How to install ##
+
+To install, you can use the command:
+```
+pip install ComplexJSON
+```
+
+Or Download the repository from [GitHub](https://github.com/dail45/ComplexJSON).
+
 ## Quick Guide ##
 
 Just use it like python builtin json module
@@ -44,7 +53,7 @@ Although you might expect:
 >>> [[1, 2], [1, 2]]
 ```
 
-
+----------
 
 ### Using ###
 
