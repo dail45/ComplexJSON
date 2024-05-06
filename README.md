@@ -162,4 +162,24 @@ _json = json.dumps(obj, localClassWord="Type", localModuleWord="Module")
 new_obj = json.loads(_json, localClassWord="Type", localModuleWord="Module")
 ```
 
+#### Type Association (v1.2+) ####
+
+```python
+import ComplexJSON
+
+
+class A:
+    def __init__(self):
+        self.a = 1
+        self.b = 2
+
+
+rs = {1: A()}
+json_obj = ComplexJSON.dumps(rs, useTypeAssociation=True)
+print(json_obj)
+#>>> {"types": {".": {"useTA": true}, "0": {"__module__": "__main__", "__class__": "A"}}, "obj": {"1": {"a": 1, "b": 2, "__cid__": "0"}}}
+print(ComplexJSON.loads(json_obj))
+#>>> {'1': <__main__.A object at 0x00000154D6013490>}
+```
+
 ----------
